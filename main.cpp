@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
       for(auto c : str) {
         if(mavlink_parse_char(0, (uint8_t)c, &msg, &status)) {
           std::cout << "Received mavlink message id: " << (int)msg.msgid << std::endl;
-	}
+        }
       }
     }
   }
